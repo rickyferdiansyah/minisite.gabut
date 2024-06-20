@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+}
+
+.navbar-container {
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+.navbar-container>a {
+    position: relative;
+    float: right;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+
+    padding: 1vh 10vh;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+#about-active {
+    background-color: rgba(192, 251, 97, 0.698);
+}
+.navbar-container>a:hover {
+    background-color: rgba(251, 255, 0, 0.4);
+    font-size: 1.7em;
+}
+.mainlanding-container {
+    position: relative;
+}
+.image-container {
+    background-image: url('../images/tree-image-landing.jpg');
+    height: 50vh;
+    filter: brightness(60%);
+    background-position: 0% 90%;
+}
+.text-about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+}
+.content{
+    height: 300vh;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .navbar-container>a{
+        padding: 0px 5vh;
+    }
+    
+
+}
+
+/* -------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 400px) {
+    .navbar-container>a{
+        padding: 0px 3vh;
+    }
+}

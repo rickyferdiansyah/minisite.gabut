@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+}
+
+
+/* ----------------------------------navigation bar--------------------------------------- */
+
+.navbar-container {
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+.navbar-container>a{
+    text-decoration: none;
+    position: relative;
+    float: right;
+    font-size: 1.3em;
+    color: white;
+
+    padding: 1vh 10vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#home-active {
+    background-color: rgba(192, 251, 97, 0.698);
+}
+
+.navbar-container>a:hover{
+    background-color: rgba(251, 255, 0, 0.4);
+    font-size: 1.7em;
+    
+}
+
+
+
+/* ----------------------------------show container--------------------------------------- */
+.show-container {
+    height: 80vh;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+#puncher {
+    height: 20vh;
+    min-width: 20%;
+    width: 100px;
+    /* background-color: yellow; */
+    background-image: url("https://us.123rf.com/450wm/mozart3737/mozart37372108/mozart3737210800031/173342052-fist-punching-or-hitting-forward-punch-stop-violence-against-women-domestic-violence-concept-vector-.jpg?ver=6");
+    background-position: right;
+    background-size: cover;
+    position: absolute;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.83,.11,.87,.53);
+    
+    
+}
+.puncher-initial {
+    top: 35%;
+    left: 5%;
+}
+.puncher-final {
+    top: 35%;
+    left: 44%;
+}
+
+#target {
+    height: 20vh;
+    min-width: 5%;
+    width: 50px;
+    /* background-color: red; */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/1924px-Person_icon_BLACK-01.svg.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    /* transform: translateY(-25%); */
+    z-index: 2;
+
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.04,.79,.62,.83);
+    transition-delay: 1s;
+    
+}
+.target-initial {
+    top: 35%;
+    left: calc(60%);
+}
+.target-final {
+    top: 35%;
+    left: 90%;
+}
+
+
+
+
+
+
+/* -------------------------------controller container------------------------------------- */
+.controller-container {
+    height: 20vh;
+    width: 100%;
+    /* background-color: green; */
+    background-image: url("https://t4.ftcdn.net/jpg/03/95/37/19/360_F_395371923_x2IUqSOYDCQeBCx3auKcK3EbyzNjhlNV.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#reset-button {
+    height: 10vh;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: aquamarine;
+    border-radius: 30vh;
+}
+#punch-button {
+    height: 10vh;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    border-radius: 30vh;
+}
+
+
+
+
+
+/* ------------------------------------Media query------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+    .image-container {
+        background-position: calc(100% + 100px);
+    }
+    .navbar-container>a{
+        padding: 0px 5vh;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 400px) { 
+    .navbar-container>a{
+        padding: 0px 3vh;
+    }
+}

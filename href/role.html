@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">.disclaimer { display: none; }</style>
+    <link rel="stylesheet" href="role.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div class="rotation-request">
+    <div class="rotation-request-image"></div>
+    
+    <div>Please rotate your device</div>
+</div>
+<div class="navbar-container">
+    <a href="../index.html">Home</a>
+</div>
+<div class="main" id="main">
+    
+    <div class="top-container">
+        <div class="hitpoint" id="hitpoint-player">
+            <h1>HP : </h1>
+            <h1  class="hitpoint-num" id="hitpoint-player-num">100</h1>
+        </div>
+
+        <div class="hitpoint" id="hitpoint-boss">
+            <h1>HP : </h1>
+            <h1 class="hitpoint-num" id="hitpoint-boss-num">100</h1>
+        </div>
+
+        <div id="home-button">
+            
+        </div>
+
+    </div>
+
+
+    <div class="show-container">
+
+        <div class="character" id="player-character">
+        </div>
+
+        <div class="character" id="boss-character">
+        </div>
+
+        <button class="attack-button" id="thunder-attack" onclick="thunderAttack()">
+            Thunder
+        </button>
+
+        <button class="attack-button" id="blade-attack" onclick="bladeAttack()">
+            Blade
+        </button>
+        <button class="attack-button release-attack" id="release-attack" onclick="releaseAttack()">
+            Release
+        </button>
+        
+
+
+<!-- ------------------------------attacks---------------------------------- -->
+
+        <div id="thunderAtt" class="thunder-appear-initial">
+        </div>
+
+        <div id="bladeAtt1" class="blade1-appear-initial">
+        </div>
+        <div id="bladeAtt2" class="blade2-appear-initial">
+        </div>
+        <div id="bladeAtt3" class="blade3-appear-initial">
+        </div>
+        
+        <div id="rockAtt" class="rock-appear-initial">
+        </div>
+
+
+    </div>
+
+    <div id="damage-on-player"></div>
+    <div id="damage-on-boss"></div>
+</div>
+
+
+
+
+
+<script src="role.js"></script>
+</body>
+</html>

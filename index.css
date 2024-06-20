@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+}
+
+
+
+
+.image-container {
+    background-image: url("./images/tree-image-landing.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: calc(100%);
+    background-repeat: no-repeat;
+    filter: brightness(60%);
+    background-attachment: fixed;
+}
+#landing-text>p {
+    text-align: center;
+}
+
+
+
+.navbar-container {
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+.navbar-container>a{
+    text-decoration: none;
+    position: relative;
+    float: right;
+    font-size: 1.3em;
+    color: white;
+
+    padding: 1vh 10vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#home-active {
+    background-color: rgba(192, 251, 97, 0.698);
+}
+
+.navbar-container>a:hover{
+    background-color: rgba(251, 255, 0, 0.4);
+    font-size: 1.7em;
+    
+}
+#landingText {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%) scaleX(1.5);
+    color: whitesmoke;
+    font-size: 2em;
+    letter-spacing: 5px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+.menu-container {
+    min-height: 30vh;
+    transform: translateX(1.5);
+}
+#menu-text {
+    margin: 10px 5vh;
+    letter-spacing: 3px;
+}
+
+.menus-container {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.menus-container>a {
+    text-decoration: none;
+}
+.menus {
+    margin: 3vh 3vh;
+    height: 20vh;
+    width: 20vh;
+    /* background-color: green; */
+    position: relative;
+    display: inline-block;
+}
+.menus:hover {
+    transform: scale(1.4);
+}
+.menus-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%) scaleX(1.2);
+    letter-spacing: 2px;
+    color: black;
+}
+#menu1-gambar {
+    background-image: url('./images/jumpsace-menu-image.jpg');
+    background-size: cover;
+    background-position: 70% 0%;
+    height: 70%;
+    width: 70%;
+    border-radius: 20vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#menu2-gambar {
+    background-image: url('https://us.123rf.com/450wm/mozart3737/mozart37372108/mozart3737210800031/173342052-fist-punching-or-hitting-forward-punch-stop-violence-against-women-domestic-violence-concept-vector-.jpg?ver=6');
+    background-size: cover;
+    background-position: 70% 0%;
+    height: 70%;
+    width: 70%;
+    border-radius: 20vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#menu3-gambar {
+    background-image: url('https://img.freepik.com/free-vector/cartoon-money-bag-mascot-holding-sword-shield-cute-style-tshirt-sticker-logo-element_214584-599.jpg?size=338&ext=jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    width: 70%;
+    border-radius: 20vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#horizontal-row1 {
+    margin: 5vh auto;
+    width: 50%;
+    background-color: grey;
+}
+
+
+
+
+
+
+.content-container {
+    height: 100vh;
+}
+.centered-paragraph {
+    text-align: center;
+    margin: 10vh 15%;
+}
+
+
+
+
+
+
+
+
+
+
+.futuristic-circle {
+    background-image: url("./images/PicsArt_08-28-03.01.11.png");
+    height: 20vh;
+    width: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    right: 3vh;
+    bottom: 3vh;
+    filter: sepia(0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 600px) {
+    .image-container {
+        background-position: calc(100% + 100px);
+        font-size: 1em;
+    }
+    .navbar-container>a{
+        padding: 0px 5vh;
+    }
+    
+
+}
+
+/* -------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 400px) {
+    .navbar-container>a{
+        padding: 0px 3vh;
+        font-size: 1em;
+    }
+}

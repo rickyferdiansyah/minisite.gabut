@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="jumpscare.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Site - Landing Page</title>
+</head>
+<body>
+    <div class="navbar-container">
+        <a href="./contact.html">Contact</a>
+        <a href="./about.html">About</a>
+        <a href="../index.html">Home</a>
+    </div>
+    
+    <button class="btn" onclick="imagePop()">
+        Click here
+    </button>
+    <div id="image-hidden">
+    </div>
+    
+    <button class="btn-move" id="btnMove" onclick="geserTombol()">
+        Click here
+    </button>
+
+<script>
+    function imagePop() {
+        document.getElementById('image-hidden').style.display = 'block';
+    }
+
+    // function geserTombol() {
+    //     var kode = 1;
+    //     if (kode == 1) {
+    //         document.getElementById('btnMove').style.color = "green"; 
+    //         kode = 2;
+    //     }else if (kode == 2) {
+    //         document.getElementById('btnMove').style.color = "blue"; 
+    //         kode = 3;
+    //     }else if (kode == 3) {
+    //         document.getElementById('image-hidden').style.display = 'block';
+    //     }
+    // }
+
+    // function geserTombol() {
+    //     var kode = 1;
+    //     if (kode == 1) {
+    //         document.getElementById("btnMove").style.color = "green";
+    //         function geserTombol2();
+    //     }
+    //     else {
+    //         alert("error");
+    //     }
+    // }
+    // function geserTombol2() {
+    //     var kode = 2;
+    //     if (kode == 2) {
+    //         document.getElementById("btnMove").style.color = "blue";
+    //     }
+    // }
+
+</script>
+
+</body>
+</html>
